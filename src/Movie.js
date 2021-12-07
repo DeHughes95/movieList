@@ -1,5 +1,5 @@
 import React from 'react';
-import StarRating from './stars';
+import StarRating from './Stars';
 import ReviewList from './ReviewList';
 
 
@@ -14,9 +14,10 @@ export default class Movie extends React.Component {
         e('div', {class: 'card-body'},
             'Movie Content'),
         e('div', {class: 'card-footer'},
-            e(StarRating, {}, null),
-            e('br', {}, null),
-            e(ReviewList), {}, null)  
+            //e(<StarRating/>, {}, null),
+            //e('br', {}, null),
+            e(ReviewList, {}, null)
+            )
         );
     }
 }
