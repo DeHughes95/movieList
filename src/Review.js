@@ -12,8 +12,8 @@ export default class Review extends React.Component {
       e('div', {class: 'card-body'},
         'Text Review'),
       e('div', {class: 'card-footer'},
-          'Review content')
-          //e(<StarRating/>, {}, null),
+          'Review content'),
+          <StarRating/>
       );
   }
 }

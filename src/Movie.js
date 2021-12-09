@@ -14,8 +14,7 @@ export default class Movie extends React.Component {
         e('div', {class: 'card-body'},
             'Movie Content'),
         e('div', {class: 'card-footer'},
-            //e(<StarRating/>, {}, null),
-            //e('br', {}, null),
+            <StarRating/>,
             e(ReviewList, {}, null)
             )
         );

@@ -8,6 +8,8 @@ const StarRating = () => {
     <div className="star-rating">
       {[...Array(5)].map((star, index) => {
         index += 1;
+
+        if (!rating){
         return (
           <button
             type="button"
@@ -20,6 +22,16 @@ const StarRating = () => {
             <span className="star">&#9733;</span>
           </button>
         );
+        }
+        else return (
+          <button
+            type="button"
+            key={index}
+            className={index <= (hover || rating) ? "on" : "off"}
+          >
+            <span className="star">&#9733;</span>
+          </button>
+        )
       })}
     </div>
   );
